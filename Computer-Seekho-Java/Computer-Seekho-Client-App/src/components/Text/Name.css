@@ -1,0 +1,66 @@
+.heading-container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: white;
+  text-align: center;
+}
+
+/* Ensure logo and text are aligned horizontally */
+.heading-content1 {
+  display: flex;
+  align-items: center; /* Vertically align logo and text */
+  flex-direction: row; /* Ensure items stay in one row */
+  gap: 16px; /* Space between logo and text */
+  font-size: 32px;
+  font-weight: bold;
+  color: #1e3a8a;
+  white-space: nowrap; /* Prevent text from breaking into multiple lines */
+}
+
+/* Ensure the logo stays to the left of the text */
+.heading-logo1 {
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+  object-fit: contain; /* Ensures the image scales properly */
+  display: inline-block; /* Makes sure it stays in line with the text */
+  vertical-align: middle; /* Ensures proper vertical alignment */
+}
+
+
+.heading-text1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #6b7280, #374151, #111827, #374151, #6b7280);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+/* Flashy Shimmer Effect */
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}

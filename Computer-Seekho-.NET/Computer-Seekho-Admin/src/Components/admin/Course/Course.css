@@ -1,0 +1,222 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 24px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+  
+  .search-input,
+  .select-limit,
+  .course-dropdown {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 200px;
+  }
+  
+  .search-input:focus,
+  .select-limit:focus,
+  .course-dropdown:focus {
+    outline: none;
+    border-color: #4f93b3;
+  }
+  
+  .search-input {
+    width: 250px;
+  }
+  
+  .course-dropdown {
+    width: 180px;
+  }
+  
+  .select-limit {
+    width: 140px;
+  }
+  
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .course-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .course-table thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .table-header th{
+    background: linear-gradient(180deg, #B1C29E 0%, #83956d 100%);
+  }
+  
+  .course-table tbody {
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 450px; 
+  }
+  .course-table th, .course-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .course-table th:nth-child(1), 
+  .course-table td:nth-child(1) { 
+    width: 5%; 
+  }
+  
+  .course-table th:nth-child(2), 
+  .course-table td:nth-child(2) { 
+    width: 8%; 
+  }
+  
+  .course-table th:nth-child(n+3), 
+  .course-table td:nth-child(n+3) { 
+    width: auto;
+  }
+
+  .course-table td:nth-child(7){
+    padding-left:4.5% ;
+  }
+  .course-table th:nth-child(7){
+    padding-right:4.5% ;
+  }
+
+  
+  
+  .table-body-container {
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 600px;
+  }
+  
+  .course-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .course-table td img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .table-body-container {
+    height: 500px;
+    overflow-y: auto;
+  }
+  
+  .avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+   .button-delete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+  
+    color: #fff;
+    background: linear-gradient(180deg, #e80303 0%, #b00303 100%);
+     background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-delete:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal-overlay.show {
+    opacity: 1;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal-content.show {
+    opacity: 1;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .delete-confirm-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .delete-confirm-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .cancel-btn {
+    background-color: #2196f3;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #1976d2;
+  }
+  

@@ -1,0 +1,17 @@
+.dashboard-layout {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  margin-left: 20px;
+  padding: 10px;
+  overflow-y: auto;
+  height: 100vh; 
+}
+.id-column {
+  width: 50px;
+  text-align: center;
+}
+
+

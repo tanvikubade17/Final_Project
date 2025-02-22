@@ -1,0 +1,23 @@
+/* ====== General Styling ====== */
+.carousel-container {
+    width: 100%;
+    position: relative;
+  }
+  
+  /* ====== Image Container ====== */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white; /* Ensure background is white */
+  }
+  
+  /* ====== Image Styling ====== */
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 80vh; /* Ensures images don't take full screen height */
+  }
+  

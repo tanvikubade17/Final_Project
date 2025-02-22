@@ -1,0 +1,34 @@
+/* Importing a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    text-align: center;
+    padding: 20px;
+    background: #f5f2f2;
+}
+
+.heading-content {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;  /* Stack children (h3 & p) vertically */
+    align-items: center;     /* Center them horizontally */
+}
+
+h2 {
+    /* font-size: 40px; */
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: orange;
+    margin-bottom: 10px; /* Adds space between h3 and p */
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}

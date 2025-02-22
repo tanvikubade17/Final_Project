@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dddddd;
+    
+  }
+  
+  .wrapper {
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  
+  .card {
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(20px);
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), rgb(61, 201, 196));
+    transition: 0.5s all;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+  }
+
+  .card:hover .info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card .info h1{
+    margin: 0;
+  }
+
+  .card .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+
+  .card .info .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+  margin-bottom: 10px;
+  }
+
+  .card .info .btn:hover {
+    background: #000;
+    color:#fff;
+}
+

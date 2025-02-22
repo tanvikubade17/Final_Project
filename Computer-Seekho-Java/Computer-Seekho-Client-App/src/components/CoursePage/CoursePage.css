@@ -1,0 +1,191 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Course Container */
+  .course-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #eef2f3, #ffffff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .course-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 400px; /* ✅ Increased height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .course-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Hover Effect on Banner */
+  .course-banner:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+  }
+  
+  /* Overlay for Course Banner */
+  .course-overview-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .course-banner:hover .course-overview-overlay {
+    opacity: 1;
+  }
+  
+  /* Course Title & Description */
+  .course-overview-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .course-overview-overlay p {
+    font-size: 1.2rem;
+    max-width: 80%;
+  }
+  
+  /* Course Overview */
+  .course-overview {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect on Overview */
+  .course-overview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Overview Heading */
+  .course-overview h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  /* Course Content Section */
+  .course-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect on Course Content */
+  .course-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 193, 7, 0.3);
+  }
+  
+  /* Course Content Heading */
+  .course-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+  }
+  
+  /* Accordion Styling */
+  .accordion {
+    border: none;
+    border-radius: 10px;
+    text-align: justify;
+    width: 100%;
+  }
+  
+  /* Accordion Item */
+  .accordion-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Accordion Header */
+  .accordion-header {
+    background: #007bff;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    color: white;
+    border: none;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  /* Hover Effect on Accordion Header */
+  .accordion-header:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Accordion Content */
+.accordion-content {
+    padding: 15px;
+    background: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.3s ease-out;
+    opacity: 0;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  .accordion-content.open {
+    max-height: 500px; /* ✅ Expands to fit content */
+    opacity: 1;
+    padding: 15px;
+  }
+  
+  /* Lecture Items */
+  .lecture-item {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+  }
+  
+  .lecture-item:hover {
+    color: #007bff;
+  }
+  

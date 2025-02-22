@@ -1,0 +1,66 @@
+/* StudentForm.css
+
+.modal-content {
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+
+  .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .d-flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  button.ms-2 {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+  }
+  
+  button.ms-2:hover {
+    background-color: #5a6268;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+   */

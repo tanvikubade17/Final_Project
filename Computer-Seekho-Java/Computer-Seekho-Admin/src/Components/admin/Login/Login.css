@@ -1,0 +1,126 @@
+/* Add the keyframes for animation */
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the image */
+  .login-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  
+  /* Apply the animation to the form */
+  .login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: slideInRight 1s ease-out forwards;
+  }
+  
+  /* Existing Styles */
+  .login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 64px);
+    padding: 20px 0px;
+    background-color: #D9D4D3;
+  }
+  
+  .login-image {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .login-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .highlight {
+    color: #e91e63;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    font-size: 1rem;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+  
+  .input-group input:focus {
+    border-color: #e91e63;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.3);
+  }
+  
+  .login-button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid #e91e63;
+    background-color: #e91e63;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background-color: white;
+    color: #e91e63;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .login-image {
+      max-width: 300px;
+    }
+  }
+  
